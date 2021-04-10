@@ -94,8 +94,12 @@ body {
 .site-nav .item:last-child {
   margin-right: 0;
 }
-.site-nav {
-  display: flex;
+
+.site-nav .link {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
