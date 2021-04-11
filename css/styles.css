@@ -74,9 +74,12 @@ body {
 }
 
 .logo {
+  font-family: Raleway;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
+  text-decoration: none;
 }
 
 .logo-primary {
@@ -87,12 +90,15 @@ body {
   color: var(--primary-white-color);
 }
 
-.site-nav .item {
-  background-color: tomato;
-  margin-right: 40px;
+.site-nav {
+  display: flex;
 }
-.site-nav .item:last-child {
-  margin-right: 0;
+.site-nav .item { 
+  /* background-color: tomato;
+} */
+
+.site-nav .item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .site-nav .link {
@@ -107,7 +113,7 @@ body {
   color: var(--title-text-color);
 }
 
-.site-nav. link:hover,
+.site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
 }
@@ -187,11 +193,16 @@ body {
   background-color: #f5f4fa;
   cursor: pointer;
 }
+
 .btn-item:hover,
 .btn-item:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
+
+/* .btn-info {
+  display: flex;
+} */
 .portfolio-title {
   font-size: 18px;
   line-height: 0.2;
