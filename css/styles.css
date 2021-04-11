@@ -18,6 +18,12 @@ body {
   background-color: var(--primary-white-color);
 }
 
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -37,10 +43,6 @@ body {
 .link:hover,
 .link:focus {
   color: var(--accent-color);
-}
-
-.list {
-  list-style: none;
 }
 
 .btn {
@@ -66,11 +68,29 @@ body {
   color: var(--primary-white-color);
 }
 
+.hero {
+  text-align: center;
+}
+
+.features {
+  display: flex;
+}
+
 .section-title {
   font-family: ar(--main-font);
   font-size: 36px;
   line-height: 1.17;
   color: var(--title-text-color);
+}
+
+.service {
+  display: flex;
+  align-items: center;
+}
+
+.team {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -90,8 +110,18 @@ body {
   color: var(--primary-white-color);
 }
 
+.box {
+  display: flex;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 .site-nav {
   display: flex;
+  margin-left: 95px;
 }
 
 .site-nav .item:not(:last-child) {
@@ -121,6 +151,8 @@ body {
 
 .auth-nav {
   display: flex;
+  align-items: center;
+  margin-left: auto;
 
   font-weight: 500;
   font-size: 14px;
@@ -141,6 +173,8 @@ body {
 /* Стили для index.html */
 
 .feature-list {
+  display: flex;
+
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -149,6 +183,11 @@ body {
 
 .feature-item {
   font-style: inherit;
+}
+
+.features .item {
+  width: 270px;
+  height: 75px;
 }
 
 .team-item {
@@ -176,6 +215,7 @@ body {
 .tel {
   color: rgba(255, 255, 255, 0.6);
 }
+
 .address {
   font-style: inherit;
 }
@@ -187,6 +227,7 @@ body {
 /* Стили для portfolio.html */
 .control {
   display: flex;
+  justify-content: center;
 }
 
 .control .item + .item {
@@ -202,11 +243,18 @@ body {
   background-color: #f5f4fa;
   cursor: pointer;
 }
+
 .btn-item:hover,
 .btn-item:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
+
+.progress {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .portfolio-title {
   font-size: 18px;
   line-height: 0.2;
