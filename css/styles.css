@@ -91,21 +91,6 @@ body {
 }
 
 .site-nav {
-  display: flex;
-}
-.site-nav .item { 
-  /* background-color: tomato;
-} */
-
-.site-nav .item:not(:last-child) {
-  margin-right: 40px;
-}
-
-.site-nav .link {
-  display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -165,10 +150,6 @@ body {
   color: var(--primary-text-color);
 }
 
-.address {
-  font-style: inherit;
-}
-
 .map {
   color: var(--primary-white-color);
 }
@@ -176,6 +157,9 @@ body {
 .mail,
 .tel {
   color: rgba(255, 255, 255, 0.6);
+}
+.address {
+  font-style: inherit;
 }
 
 .dark-bg {
@@ -193,16 +177,11 @@ body {
   background-color: #f5f4fa;
   cursor: pointer;
 }
-
 .btn-item:hover,
 .btn-item:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
-
-/* .btn-info {
-  display: flex;
-} */
 .portfolio-title {
   font-size: 18px;
   line-height: 0.2;
