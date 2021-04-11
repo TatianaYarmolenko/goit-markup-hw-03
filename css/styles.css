@@ -91,11 +91,23 @@ body {
 }
 
 .site-nav {
+  display: flex;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav .link {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--title-text-color);
 }
 
 .site-nav .link:hover,
@@ -108,11 +120,17 @@ body {
 }
 
 .auth-nav {
+  display: flex;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+}
+
+.auth-nav .item + .item {
+  margin-left: 50px;
 }
 
 .auth-nav .link:hover,
@@ -167,6 +185,13 @@ body {
 }
 
 /* Стили для portfolio.html */
+.control {
+  display: flex;
+}
+
+.control .item + .item {
+  margin-left: 8px;
+}
 
 .btn-item {
   font-weight: 500;
