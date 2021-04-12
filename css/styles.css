@@ -83,16 +83,6 @@ body {
   color: var(--title-text-color);
 }
 
-.service {
-  display: flex;
-  align-items: center;
-}
-
-.team {
-  display: flex;
-  align-items: center;
-}
-
 .logo {
   font-family: Raleway;
   font-weight: 700;
@@ -190,6 +180,24 @@ body {
   height: 75px;
 }
 
+.service {
+  display: flex;
+  align-items: center;
+}
+
+.service .item + .item {
+  margin-left: 30px;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+}
+
+.team .team-item + .team-item {
+  margin-left: 30px;
+}
+
 .team-item {
   text-align: center;
 }
@@ -225,6 +233,14 @@ body {
 }
 
 /* Стили для portfolio.html */
+.portfolio {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .control {
   display: flex;
   justify-content: center;
@@ -250,10 +266,38 @@ body {
   background-color: var(--accent-color);
 }
 
+.btn {
+  margin: auto;
+  padding: auto;
+}
+
 .progress {
   display: flex;
   flex-wrap: wrap;
+  background-color: turquoise;
+  margin: -15px;
 }
+
+.progress-test {
+  width: 370px;
+  background-color: tomato;
+
+  margin: 15px;
+  /* margin-bottom: 30px; */
+}
+
+/* /* .progress-test:nth-child(3n) {
+   margin-bottom: 0; 
+  margin-right: 0; 
+} */
+
+/* .progress .progress-test + .progress-test {
+  margin-left: 30px;
+} */
+
+/* .progress-test:nth-child(3n) {
+  margin-right: 0;
+} */
 
 .portfolio-title {
   font-size: 18px;
@@ -267,9 +311,4 @@ body {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-}
-
-.tel:hover,
-.tel:focus {
-  outline: none;
 }
