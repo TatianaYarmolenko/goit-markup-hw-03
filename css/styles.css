@@ -10,12 +10,24 @@
 }
 
 body {
+  margin: 0;
+
   font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  outline: 2px solid tomato;
 }
 
 .list {
@@ -46,37 +58,53 @@ body {
 }
 
 .btn {
-  font-size: 16px;
-  line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
+  /* display: inline-block; */
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 50px;
+
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  letter-spacing: 0.06em;
   cursor: pointer;
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   font-family: var(--main-font);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
-}
 
-.hero {
-  text-align: center;
+  background-color: tomato;
 }
 
 .features {
   display: flex;
 }
 
+.section {
+  padding-top: 94px;
+}
+
+.section:last-child {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   font-family: ar(--main-font);
   font-size: 36px;
   line-height: 1.17;
@@ -162,8 +190,10 @@ body {
 
 /* Стили для index.html */
 
-.feature-list {
+.features .title {
   display: flex;
+  margin-top: 0;
+  margin-bottom: 10px;
 
   font-size: 14px;
   line-height: 1.14;
@@ -172,6 +202,9 @@ body {
 }
 
 .feature-item {
+  margin-top: 0;
+  margin-bottom: 94px;
+
   font-style: inherit;
 }
 
@@ -202,14 +235,20 @@ body {
   text-align: center;
 }
 
-.team-item-name {
+.team .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   color: var(--title-text-color);
 }
 
-.team-item-position {
+.team p {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   font-size: 16px;
   line-height: 0.19;
   color: var(--primary-text-color);
@@ -253,12 +292,18 @@ body {
 }
 
 .btn-item {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 38px;
+
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  color: var(--title-text-color);
-  background-color: #f5f4fa;
   cursor: pointer;
 }
 
@@ -266,6 +311,7 @@ body {
 .btn-item:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  border-color: violet;
 }
 
 .btn {
@@ -302,13 +348,19 @@ body {
 } */
 
 .portfolio-title {
+  margin-top: 0;
+  margin-bottom: 4px;
+
   font-size: 18px;
   line-height: 0.2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
 
-.portfolio-item {
+.progress p {
+  margin-top: 0;
+  margin-bottom: 10pz;
+
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
