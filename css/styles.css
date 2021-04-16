@@ -36,8 +36,6 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-
-  outline: 2px solid tomato;
 }
 
 h1,
@@ -100,14 +98,13 @@ p {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
-
-  background-color: tomato;
 }
 
 .box {
   display: flex;
 }
 
+.nav,
 .main-nav {
   display: flex;
   align-items: center;
@@ -221,8 +218,13 @@ p {
 }
 
 .features .item {
-  width: 270px;
+  width: calc(100% - 120px / 4);
   min-height: 75px;
+  margin-right: 30px;
+}
+
+.features .item:nth-child(4n) {
+  margin-right: 30px;
 }
 
 .service {
@@ -278,8 +280,7 @@ p {
   color: var(--primary-white-color);
 }
 
-.mail,
-.tel {
+.contacts-link {
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -329,11 +330,15 @@ p {
   cursor: pointer;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .btn-item:hover,
 .btn-item:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  border-color: violet;
 }
 
 .btn {
@@ -344,34 +349,21 @@ p {
 .progress {
   display: flex;
   flex-wrap: wrap;
-  background-color: turquoise;
   margin: -15px;
 }
 
 .progress-test {
   width: 370px;
-  background-color: tomato;
 
   margin: 15px;
-  /* margin-bottom: 30px; */
 }
 
-/* /* .progress-test:nth-child(3n) {
-   margin-bottom: 0; 
-  margin-right: 0; 
-} */
-
-/* .progress .progress-test + .progress-test {
-  margin-left: 30px;
-} */
-
-/* .progress-test:nth-child(3n) {
-  margin-right: 0;
-} */
+.card-content {
+  padding: 20px 24px 20px 24px;
+}
 
 .portfolio-title {
-  margin-bottom: 4px;
-  /* margin: 20px 24px 4px 24px; */
+  margin-bottom: 4;
 
   font-size: 18px;
   line-height: 0.2;
@@ -379,13 +371,8 @@ p {
   color: var(--title-text-color);
 }
 
-.progress img {
-  margin-bottom: 20px;
-}
-
-.progress .portfolio-descrp {
-  margin-bottom: 20px;
-  /* margin: 4px 24px 20px 24px; */
+.portfolio-descr {
+  margin-bottom: 0;
 
   font-size: 16px;
   line-height: 1.87;
