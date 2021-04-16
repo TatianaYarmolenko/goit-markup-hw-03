@@ -91,7 +91,6 @@ p {
 }
 
 .hero-title {
-  margin-top: 0;
   margin-bottom: 30px;
 
   font-family: var(--main-font);
@@ -103,46 +102,6 @@ p {
   color: var(--primary-white-color);
 
   background-color: tomato;
-}
-
-.features {
-  display: flex;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.section:second-child {
-  padding-bottom: 94px;
-}
-
-.section-title {
-  margin-top: 0;
-  margin-bottom: 50px;
-
-  font-family: ar(--main-font);
-  font-size: 36px;
-  line-height: 1.17;
-  color: var(--title-text-color);
-}
-
-.logo {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--accent-color);
-  text-decoration: none;
-}
-
-.logo-primary {
-  color: var(--title-text-color);
-}
-
-.logo-secondary {
-  color: var(--primary-white-color);
 }
 
 .box {
@@ -205,11 +164,49 @@ p {
   color: var(--accent-color);
 }
 
+.features {
+  display: flex;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-features {
+  padding-top: 94px;
+}
+
+.section-title {
+  margin-bottom: 50px;
+
+  font-family: ar(--main-font);
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--title-text-color);
+}
+
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.logo-primary {
+  color: var(--title-text-color);
+}
+
+.logo-secondary {
+  color: var(--primary-white-color);
+}
+
 /* Стили для index.html */
 
 .features .title {
   display: flex;
-  margin-top: 0;
   margin-bottom: 10px;
 
   font-size: 14px;
@@ -219,15 +216,13 @@ p {
 }
 
 .feature-item {
-  margin-top: 0;
-  margin-bottom: 94px;
-
+  margin-bottom: 0;
   font-style: inherit;
 }
 
 .features .item {
   width: 270px;
-  height: 75px;
+  min-height: 75px;
 }
 
 .service {
@@ -248,12 +243,17 @@ p {
   margin-left: 30px;
 }
 
+.hero {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .team-item {
   text-align: center;
 }
 
 .team .title {
-  margin-top: 0;
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -266,8 +266,7 @@ p {
   margin-bottom: 30px;
 }
 
-.team p {
-  margin-top: 0;
+.team .team-description {
   margin-bottom: 30px;
 
   font-size: 16px;
@@ -284,11 +283,21 @@ p {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .address {
+  padding-top: 20px;
   font-style: inherit;
 }
 
-.footer {
+.address .item:not(:first-child) {
+  padding-top: 8px;
+}
+
+.dark-bg {
   background-color: var(--dark-bg);
 }
 
@@ -361,7 +370,6 @@ p {
 } */
 
 .portfolio-title {
-  margin-top: 0;
   margin-bottom: 4px;
   /* margin: 20px 24px 4px 24px; */
 
@@ -375,8 +383,7 @@ p {
   margin-bottom: 20px;
 }
 
-.progress p {
-  margin-top: 0;
+.progress .portfolio-descrp {
   margin-bottom: 20px;
   /* margin: 4px 24px 20px 24px; */
 
