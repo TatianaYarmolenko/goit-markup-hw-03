@@ -121,8 +121,8 @@ p {
 
 .site-nav .link {
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: var(--title-text-color);
   font-weight: 500;
@@ -156,6 +156,12 @@ p {
   margin-left: 50px;
 }
 
+.auth-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-color);
@@ -170,6 +176,10 @@ p {
   padding-bottom: 94px;
 }
 
+.section.team-card {
+  background: #f5f4fa;
+}
+
 .section-features {
   padding-top: 94px;
 }
@@ -181,6 +191,7 @@ p {
   font-size: 36px;
   line-height: 1.17;
   color: var(--title-text-color);
+  text-align: center;
 }
 
 .logo {
@@ -224,7 +235,7 @@ p {
 }
 
 .features .item:nth-child(4n) {
-  margin-right: 30px;
+  margin-right: 0;
 }
 
 .service {
@@ -253,6 +264,11 @@ p {
 
 .team-item {
   text-align: center;
+
+  background: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team .title {
@@ -264,15 +280,15 @@ p {
   color: var(--title-text-color);
 }
 
-.team img {
-  margin-bottom: 30px;
+.our-team {
+  padding: 30px 32px;
 }
 
 .team .team-description {
-  margin-bottom: 30px;
+  margin-bottom: 0;
 
   font-size: 16px;
-  line-height: 0.19;
+  line-height: 1.19;
   color: var(--primary-text-color);
 }
 
@@ -290,12 +306,12 @@ p {
 }
 
 .address {
-  padding-top: 20px;
+  margin-top: 20px;
   font-style: inherit;
 }
 
 .address .item:not(:first-child) {
-  padding-top: 8px;
+  margin-top: 9px;
 }
 
 .dark-bg {
@@ -317,6 +333,7 @@ p {
 .btn-item {
   display: inline-block;
   border-radius: 4px;
+  border: none;
   padding: 6px 22px;
   min-width: 38px;
 
@@ -335,6 +352,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 .btn-item:hover,
 .btn-item:focus {
   color: var(--primary-white-color);
@@ -360,13 +378,16 @@ img {
 
 .card-content {
   padding: 20px 24px 20px 24px;
+  background: var(--primary-white-color);
+  border-top: none;
+  border: 1px solid #eeeeee;
 }
 
 .portfolio-title {
   margin-bottom: 4;
 
   font-size: 18px;
-  line-height: 0.2;
+  line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
